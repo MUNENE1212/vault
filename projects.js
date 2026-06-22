@@ -183,13 +183,14 @@ const PROJECTS = [
   {
     name: "Kuku Egg Tracker",
     path: "2026/zebray/kuku-egg-tracker",
-    status: "wip",
-    tier: 9,
+    status: "live",
+    tier: 8,
     tagline: "Poultry/egg production tracker w/ Firestore realtime.",
-    desc: "Next.js 16, Firebase Firestore (client-only), bcrypt PIN login per member.",
-    stack: ["Next.js 16", "Firebase Firestore", "bcrypt"],
+    desc: "Next.js 16, Firebase Firestore (client-only), bcrypt PIN login per member. Daily egg logs, sales, expenses, loans, weekly contributions, meeting minutes, forum.",
+    stack: ["Next.js 16", "Firebase Firestore", "Tailwind CSS v4", "Recharts", "bcryptjs", "PWA"],
+    url: "https://zebra.ementech.co.ke",
     repo: "https://github.com/MUNENE1212/kuku-egg-tracker",
-    notes: "firebase-debug.log present — scrub before deploy."
+    notes: "Live at zebra.ementech.co.ke. Firebase project: zebra-youth."
   },
   {
     name: "Jaseci Refill System",
