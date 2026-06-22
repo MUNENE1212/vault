@@ -166,7 +166,8 @@ const PROJECTS = [
     tagline: "Multi-shop e-commerce parent platform.",
     desc: "Architectural umbrella for per-shop storefronts (parent of iphone.onlineduka.shop). Nginx + ecosystem config.",
     stack: ["Next.js", "Prisma", "Nginx"],
-    notes: "ARCHITECTURE.md only — no CLAUDE.md yet."
+    repo: "https://github.com/MUNENE1212/onlineduka",
+    notes: "Now on GitHub (private) — initial commit + ARCHITECTURE.md."
   },
   {
     name: "Baitech Pricing Dashboard",
@@ -198,7 +199,8 @@ const PROJECTS = [
     tagline: "Refill system written in Jaseci.",
     desc: ".jac source with companion frontend. PROJECT_PLAN, VERIFICATION, and SIMPLIFIED_UI docs.",
     stack: ["Jaseci (.jac)", "Frontend"],
-    notes: "No git repo yet."
+    repo: "https://github.com/MUNENE1212/jaseci-refill-system",
+    notes: "Now on GitHub (private)."
   },
   {
     name: "GreenRent",
@@ -319,7 +321,8 @@ const PROJECTS = [
     tagline: "Multi-business mgmt + delivery storefront for 3 shops.",
     desc: "Retail / gas+water / cyber under one platform. PLAN.md is locked. Phase 0 blocked on owner-supplied creds.",
     stack: ["Django 5", "DRF", "Postgres", "React", "Vite", "Next.js", "Celery", "Redis"],
-    notes: "Locked plan. mockup.html available."
+    repo: "https://github.com/MUNENE1212/pejan-inventory",
+    notes: "Locked plan. mockup.html available. Now on GitHub."
   },
 
   /* ============================================================
@@ -513,7 +516,8 @@ const PROJECTS = [
     tagline: "Two design docs, no infra yet.",
     desc: "INFRASTRUCTURE_BLUEPRINT.md + STUDY_NOTES.md. Reference material.",
     stack: ["Docs"],
-    notes: "Plan-grade. Lift into baitech-infra when ready."
+    repo: "https://github.com/MUNENE1212/vps-infra",
+    notes: "Now on GitHub (private) — design notes + blueprint."
   },
   {
     name: "Content Guru",
