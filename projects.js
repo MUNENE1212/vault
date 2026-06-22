@@ -193,6 +193,18 @@ const PROJECTS = [
     notes: "Live at zebra.ementech.co.ke. Firebase project: zebra-youth."
   },
   {
+    name: "KEROMA",
+    path: "keroma",
+    status: "live",
+    tier: 7,
+    tagline: "Recipes that remember. African heritage recipe AI.",
+    desc: "Heritage-modern recipe platform (Next.js 15 full-stack). Marketing site, 12 curated recipes w/ JSON-LD, 4 long-form heritage articles, AI generation w/ multi-provider fallback (Anthropic → OpenAI → Google → mock), M-Pesa premium via IntaSend, full design system (Fraunces + Inter + JetBrains Mono).",
+    stack: ["Next.js 15", "TypeScript", "Tailwind v3", "Fraunces", "Inter", "Vercel AI SDK", "Mongoose", "NextAuth v5", "IntaSend"],
+    url: "https://keroma.ementech.co.ke",
+    repo: "https://github.com/MUNENE1212/keroma",
+    notes: "Brand rebuild of KE-ROMA-AI. Works out of the box (mock AI). Live AI + payments feature-flagged until keys supplied."
+  },
+  {
     name: "Jaseci Refill System",
     path: "2026/jaseci-refill-system",
     status: "wip",
