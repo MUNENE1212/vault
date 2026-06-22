@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EMENTECH — Munene Denis. A personal vault of production systems, work-in-progress, and sleeping giants." />
+  <title>EMENTECH // Vault of Giants</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <span class="brand-mark">▣</span>
+        <span class="brand-name">EMENTECH</span>
+      </div>
+      <p class="tagline">Engineering the future, one giant at a time.</p>
+      <p class="subtitle">
+        A personal vault of production systems, works-in-progress, and the sleeping
+        giants waiting for their turn. Curated, ranked, and ready to wake.
+      </p>
+
+      <div class="stats" id="stats"></div>
+
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="live">Live</button>
+        <button class="chip" data-filter="wip">In Forge</button>
+        <button class="chip" data-filter="sleeping">Sleeping</button>
+        <button class="chip" data-filter="planning">Planned</button>
+      </div>
+
+      <div class="search">
+        <input type="text" id="search" placeholder="Search by name, stack, or domain…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <main id="grid" class="grid"></main>
+
+  <footer class="foot">
+    <div class="foot-inner">
+      <p>
+        <strong>EMENTECH</strong> · Emen Engineering · Nairobi, Kenya ·
+        <a href="mailto:hello@ementech.co.ke">hello@ementech.co.ke</a>
+      </p>
+      <p class="muted">
+        Maintained as a private index. Repos live under <code>ementech-portfolio/</code>,
+        <code>2026/</code>, and friends. Last re-ordered on <span id="ordered"></span>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
