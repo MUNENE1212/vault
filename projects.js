@@ -16,6 +16,7 @@ const PROJECTS = [
     desc: "Full-stack MERN platform connecting skilled technicians with customers across Kenya. AI matching, real-time messaging, M-Pesa STK push and B2C payouts, 99+ service types in 12 categories, escrow booking-fee system.",
     stack: ["MERN", "M-Pesa Daraja", "Socket.IO", "JWT", "MongoDB 7", "React 18", "TypeScript", "Vite", "Tailwind", "PM2", "Nginx", "GitHub Actions"],
     url: "https://dumuwaks.ementech.co.ke",
+    repo: "https://github.com/MUNENE1212/dumuwaks",
     notes: "Production. Zero-downtime CI/CD on master."
   },
   {
@@ -37,6 +38,7 @@ const PROJECTS = [
     tagline: "E-commerce storefront + admin.",
     desc: "Next.js 16 + TS storefront with native MongoDB driver, Cloudinary media, custom JWT auth, and a WhatsApp checkout flow.",
     stack: ["Next.js 16", "TypeScript", "MongoDB", "Cloudinary", "JWT", "WhatsApp"],
+    url: "https://baitech.co.ke",
     notes: "v2.0.0. Pair with baitech-dashboard for pricing engine."
   },
   {
@@ -47,6 +49,8 @@ const PROJECTS = [
     tagline: "Mother company website + chat assistant.",
     desc: "React 19 + Vite + TS SPA, Express + Socket.IO API, MongoDB Atlas, Postfix/Dovecot mail, OpenAI-powered chatbot.",
     stack: ["React 19", "Vite", "Express", "Socket.IO", "MongoDB Atlas", "Postfix", "OpenAI"],
+    url: "https://ementech.co.ke",
+    repo: "https://github.com/MUNENE1212/ementech-website",
     notes: "Production. Security audit + remediation complete."
   },
   {
@@ -57,6 +61,7 @@ const PROJECTS = [
     tagline: "VPS deployment configs for 69.164.244.165.",
     desc: "Evolution API WhatsApp CRM, OpenClaw AI PA, Typebot, InfluxDB + Grafana. Docker Compose + Nginx + systemd.",
     stack: ["Docker Compose", "Nginx", "InfluxDB", "Grafana", "ZhiPu", "OpenAI"],
+    repo: "https://github.com/MUNENE1212/baitech-infra",
     notes: "Production. Watch the CREDENTIALS.md — rotate regularly."
   },
   {
@@ -68,57 +73,96 @@ const PROJECTS = [
     desc: "Static HTML portfolio + Dockerfile, deployed at munene1212.github.io. The spiritual predecessor to this index.",
     stack: ["HTML", "CSS", "Docker"],
     url: "https://munene1212.github.io",
+    repo: "https://github.com/MUNENE1212/MUNENE1212.github.io",
     notes: "Superseded by this vault but still served."
+  },
+  {
+    name: "Image Generator",
+    path: "image_generator",
+    status: "live",
+    tier: 7,
+    tagline: "Identity-preserving AI portraits.",
+    desc: "Streamlit app — 6 generation strategies × SDXL/FLUX backbones, parallel Strategy Lab, automated metrics (ArcFace/SigLIP/LAION/LPIPS), Experiments sweeps with CSV export, LoRA training via Replicate.",
+    stack: ["Python 3.12", "Streamlit", "Pydantic v2", "DuckDB", "Replicate", "Fal.ai"],
+    url: "https://image-generator.ementech.co.ke",
+    repo: "https://github.com/MUNENE1212/image-generator",
+    notes: "Live. Research-grade comparison surface."
   },
 
   /* ============================================================
      IN THE FORGE — actively worked or planned for 2026
      ============================================================ */
   {
-    name: "Image Generator",
-    path: "image_generator",
-    status: "wip",
-    tier: 1,
-    tagline: "Identity-preserving portrait generation + Strategy Lab.",
-    desc: "Streamlit app on Python 3.12. Pydantic v2 schemas, DuckDB, Replicate/Fal.ai providers. Phase 1 done; Phase 2 generator() still a NotImplementedError stub.",
-    stack: ["Python 3.12", "Streamlit", "Pydantic v2", "DuckDB", "Replicate", "Fal.ai"],
-    notes: "Backend stub. UI scaffolded."
-  },
-  {
     name: "TransitTag / Transii (INVENTING)",
     path: "INVENTING",
     status: "wip",
-    tier: 2,
+    tier: 1,
     tagline: "IoT matatu transport PWA — ride · pay · vibe.",
     desc: "tt_monitor (C + libmosquitto + libwebsockets) and tt_transit (PWA). M-Pesa flows, music voting, gamification. Demo mode at ?demo=1. IP filed.",
     stack: ["C", "libmosquitto", "libwebsockets", "cJSON", "PWA", "M-Pesa"],
+    repo: "https://github.com/MUNENE1212/transittag",
     notes: "Hardware + PWA. Demo build available."
   },
   {
-    name: "Access Control (2026)",
-    path: "2026/access_control",
-    status: "planning",
+    name: "ArdaLink Engine",
+    path: "JHUB/ardalink-engine",
+    status: "wip",
+    tier: 2,
+    tagline: "Biophysical brain — satellite + NDVI scoring.",
+    desc: "Python 3.12 + FastAPI. geopandas + networkx for journey planning, Google Earth Engine, Postgres. 8-doc docs/ tree.",
+    stack: ["Python 3.12", "FastAPI", "geopandas", "networkx", "Earth Engine", "Postgres"],
+    repo: "https://github.com/MUNENE1212/ardalink-engine",
+    notes: "Active MVP build for Red Bull Basement."
+  },
+  {
+    name: "ArdaLink AI",
+    path: "JHUB/ardalink-ai",
+    status: "wip",
     tier: 3,
-    tagline: "Multi-tenant biometric access + surveillance.",
-    desc: "FastAPI + Postgres 16 + pgcrypto, Qdrant, Jetson Orin edge, InsightFace. Duress-PIN, anti-passback. 23 ADRs, full mvp/plan/architecture/bom/security/legal docs.",
-    stack: ["FastAPI", "Postgres 16", "pgcrypto", "Qdrant", "InsightFace", "Jetson Orin"],
-    notes: "2026-09-30 deadline. Zero code yet — docs only."
+    tagline: "Voice calls herders when NDVI drops >15%.",
+    desc: "Node 24 + TS + Express 5 monorepo. Azure OpenAI Realtime, Africa's Talking, Cosmos DB, pnpm workspaces.",
+    stack: ["Node 24", "TypeScript", "Express 5", "Azure OpenAI Realtime", "Africa's Talking", "Cosmos DB", "pnpm"],
+    repo: "https://github.com/MUNENE1212/ardalink-ai",
+    notes: "Sister repos: ardalink-api, ardalink-web."
+  },
+  {
+    name: "ArdaLink API",
+    path: "JHUB/ardalink-api",
+    status: "wip",
+    tier: 4,
+    tagline: "Standalone voice/intelligence pipeline API.",
+    desc: "Node 24 + TS + Express 5. OpenAPI contract-first design.",
+    stack: ["Node 24", "TypeScript", "Express 5", "OpenAPI"],
+    repo: "https://github.com/MUNENE1212/ardalink-api",
+    notes: "Standalone API for the ArdaLink family."
+  },
+  {
+    name: "ArdaLink Web",
+    path: "JHUB/ardalink-web",
+    status: "wip",
+    tier: 5,
+    tagline: "Operator dashboard + public Talk voice app.",
+    desc: "React 19 + Vite 7 + Tailwind. pnpm workspaces monorepo.",
+    stack: ["React 19", "Vite 7", "Tailwind", "pnpm workspaces"],
+    repo: "https://github.com/MUNENE1212/ardalink-web",
+    notes: "Companion UI for ArdaLink."
   },
   {
     name: "iPhone OnlineDuka Shop",
     path: "2026/iphone.onlineduka.shop",
     status: "wip",
-    tier: 4,
+    tier: 6,
     tagline: "iPhone e-com storefront + admin (74 seeded SKUs).",
     desc: "Next.js 16, Prisma + PostgreSQL, Cloudinary, Tailwind v4, iron-session. Vitest + Playwright. KES / USD / RMB.",
     stack: ["Next.js 16", "Prisma", "PostgreSQL", "Tailwind v4", "Cloudinary", "iron-session"],
-    notes: "Seeded. Tests scaffolded."
+    repo: "https://github.com/MUNENE1212/ionline-phones",
+    notes: "Seeded. Tests scaffolded. Fork of upstream."
   },
   {
     name: "OnlineDuka (multi-shop)",
     path: "2026/onlineduka",
     status: "wip",
-    tier: 5,
+    tier: 7,
     tagline: "Multi-shop e-commerce parent platform.",
     desc: "Architectural umbrella for per-shop storefronts (parent of iphone.onlineduka.shop). Nginx + ecosystem config.",
     stack: ["Next.js", "Prisma", "Nginx"],
@@ -128,37 +172,29 @@ const PROJECTS = [
     name: "Baitech Pricing Dashboard",
     path: "2026/baitech-dashboard",
     status: "wip",
-    tier: 6,
+    tier: 8,
     tagline: "Reverse-engineer selling price from margin target.",
     desc: "Next.js 16 + SQLite + Prisma, Tailwind v4, shadcn/ui, Recharts, NextAuth. Handles WHT, ToT, VAT for Kilimall / Jumia / Own-site channels.",
     stack: ["Next.js 16", "SQLite", "Prisma", "Tailwind v4", "shadcn/ui", "Recharts", "NextAuth"],
+    repo: "https://github.com/MUNENE1212/baitech-dashboard",
     notes: "Login: admin@baitech.co.ke / baitech2026."
-  },
-  {
-    name: "Pejan Inventory (multi-shop)",
-    path: "2026/pejan_inv",
-    status: "planning",
-    tier: 7,
-    tagline: "Multi-business mgmt + delivery storefront for 3 shops.",
-    desc: "Retail / gas+water / cyber under one platform. PLAN.md is locked. Phase 0 blocked on owner-supplied creds.",
-    stack: ["Django 5", "DRF", "Postgres", "React", "Vite", "Next.js", "Celery", "Redis"],
-    notes: "Locked plan. mockup.html available."
   },
   {
     name: "Kuku Egg Tracker",
     path: "2026/zebray/kuku-egg-tracker",
     status: "wip",
-    tier: 8,
+    tier: 9,
     tagline: "Poultry/egg production tracker w/ Firestore realtime.",
     desc: "Next.js 16, Firebase Firestore (client-only), bcrypt PIN login per member.",
     stack: ["Next.js 16", "Firebase Firestore", "bcrypt"],
+    repo: "https://github.com/MUNENE1212/kuku-egg-tracker",
     notes: "firebase-debug.log present — scrub before deploy."
   },
   {
     name: "Jaseci Refill System",
     path: "2026/jaseci-refill-system",
     status: "wip",
-    tier: 9,
+    tier: 10,
     tagline: "Refill system written in Jaseci.",
     desc: ".jac source with companion frontend. PROJECT_PLAN, VERIFICATION, and SIMPLIFIED_UI docs.",
     stack: ["Jaseci (.jac)", "Frontend"],
@@ -168,27 +204,29 @@ const PROJECTS = [
     name: "GreenRent",
     path: "PROJ25/green_rent",
     status: "wip",
-    tier: 10,
+    tier: 11,
     tagline: "AI-powered flexible rental mgmt.",
     desc: "Rent Wallet micro-savings, virtual tours, IntaSend payments. Node 20 + Express, Mongo + Mongoose, Next.js 14 + TS, Redis.",
     stack: ["Node 20", "Express", "MongoDB", "Mongoose", "Next.js 14", "TypeScript", "Redis", "IntaSend"],
+    repo: "https://github.com/MUNENE1212/green_rent",
     notes: "Phase 1 partial."
   },
   {
     name: "Prompt Wizard",
     path: "PROJ25/prompt-wizard",
     status: "wip",
-    tier: 11,
+    tier: 12,
     tagline: "Tiered SaaS prompt-engineering platform.",
     desc: "Guided / Enhancement / Quick modes. Python 3.11 + FastAPI, MongoDB 7, Redis, multi-provider (OpenAI / Claude / Gemini).",
     stack: ["Python 3.11", "FastAPI", "MongoDB 7", "Redis", "OpenAI", "Claude", "Gemini"],
+    repo: "https://github.com/MUNENE1212/prompt_wizard",
     notes: "Full PROMPT_WIZARD_DOCUMENTATION.md."
   },
   {
     name: "Agentic Rev",
     path: "PROJ25/Agentic_rev",
     status: "wip",
-    tier: 12,
+    tier: 13,
     tagline: "Agentic AI experiments w/ Gradio UI + tool calls.",
     desc: "Python + Gradio + Google APIs. Tool-call orchestration playground.",
     stack: ["Python", "Gradio", "Google APIs"],
@@ -202,6 +240,7 @@ const PROJECTS = [
     tagline: "Multi-business mgmt platform (Python + React).",
     desc: "Python backend + React frontend. Bundled Python 3.11.0 source.",
     stack: ["Python 3.11", "React", "venv"],
+    repo: "https://github.com/MUNENE1212/PROJ-0",
     notes: "WARNING: README opens with <<<<<<< HEAD merge conflict. Resolve before reuse."
   },
   {
@@ -212,6 +251,7 @@ const PROJECTS = [
     tagline: "African heritage AI recipe app.",
     desc: "FastAPI + MongoDB Atlas + IntaSend. Multi-AI (OpenAI / Gemini / HF / Cohere). React Native client.",
     stack: ["FastAPI", "MongoDB Atlas", "IntaSend", "React Native", "OpenAI", "Gemini"],
+    repo: "https://github.com/MUNENE1212/KE-ROMA-AI",
     notes: "Hackathon build."
   },
   {
@@ -221,7 +261,7 @@ const PROJECTS = [
     tier: 15,
     tagline: "GBV safety platform — hold-to-record SOS.",
     desc: "MERN + Vite PWA + Tailwind + Zustand. Whisper transcription, Twilio SMS, community fund voting, LLM caching.",
-    stack: ["MERN", "Vite", "Tailwind", "Zustand", "Whisper", "Twilio"],
+    stack: ["MERN", "Vite", "PWA", "Tailwind", "Zustand", "Whisper", "Twilio"],
     notes: "DEPLOYMENT.md + LLM_CACHING_GUIDE.md included."
   },
   {
@@ -232,6 +272,7 @@ const PROJECTS = [
     tagline: "64×16 LED matrix shop display.",
     desc: "ESP32 + FastLED C++ firmware. Wokwi simulation. Python + pygame simulator. 6 animation patterns for 11 services.",
     stack: ["ESP32", "FastLED", "C++", "Wokwi", "Pygame"],
+    repo: "https://github.com/MUNENE1212/baitech-led-branding",
     notes: "Logo: assets/baitech_logo.png."
   },
   {
@@ -242,57 +283,43 @@ const PROJECTS = [
     tagline: "Companion RGB LED branding project.",
     desc: "Firmware + simulator. PROJECT_STATUS.md tracks current state.",
     stack: ["ESP32", "Firmware", "Simulator"],
+    repo: "https://github.com/MUNENE1212/rgb-branding",
     notes: "Companion to baitech-led-branding."
-  },
-  {
-    name: "ArdaLink Engine",
-    path: "JHUB/ardalink-engine",
-    status: "wip",
-    tier: 18,
-    tagline: "Biophysical brain — satellite ingest + NDVI scoring.",
-    desc: "Python 3.12 + FastAPI. geopandas + networkx for journey planning, Google Earth Engine, Postgres. 8-doc docs/ tree.",
-    stack: ["Python 3.12", "FastAPI", "geopandas", "networkx", "Earth Engine", "Postgres"],
-    notes: "Active MVP build for Red Bull Basement."
-  },
-  {
-    name: "ArdaLink AI",
-    path: "JHUB/ardalink-ai",
-    status: "wip",
-    tier: 19,
-    tagline: "Voice calls herders when NDVI drops >15%.",
-    desc: "Node 24 + TS + Express 5 monorepo. Azure OpenAI Realtime, Africa's Talking, Cosmos DB, pnpm workspaces.",
-    stack: ["Node 24", "TypeScript", "Express 5", "Azure OpenAI Realtime", "Africa's Talking", "Cosmos DB", "pnpm"],
-    notes: "Sister repos: ardalink-api, ardalink-web."
-  },
-  {
-    name: "ArdaLink API",
-    path: "JHUB/ardalink-api",
-    status: "wip",
-    tier: 20,
-    tagline: "Standalone voice/intelligence pipeline API.",
-    desc: "Node 24 + TS + Express 5. OpenAPI contract-first design.",
-    stack: ["Node 24", "TypeScript", "Express 5", "OpenAPI"],
-    notes: "Standalone API for the ArdaLink family."
-  },
-  {
-    name: "ArdaLink Web",
-    path: "JHUB/ardalink-web",
-    status: "wip",
-    tier: 21,
-    tagline: "Operator dashboard + public Talk voice app.",
-    desc: "React 19 + Vite 7 + Tailwind. pnpm workspaces monorepo.",
-    stack: ["React 19", "Vite 7", "Tailwind", "pnpm workspaces"],
-    notes: "Companion UI for ArdaLink."
   },
   {
     name: "Email Daemon",
     path: "email-daemon",
     status: "wip",
-    tier: 22,
+    tier: 18,
     tagline: "Single-file email monitor script.",
     desc: "Node emailMonitor.js. Operational script for inbox automation.",
     stack: ["Node.js"],
     notes: "No git repo. Quick utility."
+  },
+
+  /* ============================================================
+     ON THE BLUEPRINT — locked plans, not yet built
+     ============================================================ */
+  {
+    name: "Access Control (2026)",
+    path: "2026/access_control",
+    status: "planning",
+    tier: 1,
+    tagline: "Multi-tenant biometric access + surveillance.",
+    desc: "FastAPI + Postgres 16 + pgcrypto, Qdrant, Jetson Orin edge, InsightFace. Duress-PIN, anti-passback. 23 ADRs, full mvp/plan/architecture/bom/security/legal docs.",
+    stack: ["FastAPI", "Postgres 16", "pgcrypto", "Qdrant", "InsightFace", "Jetson Orin"],
+    repo: "https://github.com/MUNENE1212/biometric-access-control",
+    notes: "2026-09-30 deadline. Zero code yet — docs only."
+  },
+  {
+    name: "Pejan Inventory (multi-shop)",
+    path: "2026/pejan_inv",
+    status: "planning",
+    tier: 2,
+    tagline: "Multi-business mgmt + delivery storefront for 3 shops.",
+    desc: "Retail / gas+water / cyber under one platform. PLAN.md is locked. Phase 0 blocked on owner-supplied creds.",
+    stack: ["Django 5", "DRF", "Postgres", "React", "Vite", "Next.js", "Celery", "Redis"],
+    notes: "Locked plan. mockup.html available."
   },
 
   /* ============================================================
@@ -464,7 +491,7 @@ const PROJECTS = [
     status: "sleeping",
     tier: 17,
     tagline: "Mixed personal/work subdirs.",
-    desc: "ENGINEER (photos+projects), FACIAL RECOGNITION (empty), FUNDI (firmware tools + d.light manuals), POS (xlsx + login.py), SIGNET (TV station spreadsheets), TREASURY Y&A, ZEBRA CLASSIC (Proteus + Zebra doc), baiweb (HTML drafts).",
+    desc: "ENGINEER (photos+projects), FACIAL RECOGNITION (empty), FUNDI (firmware tools + d.light manuals), POS (xlsx + login.py + pos), SIGNET (TV station spreadsheets), TREASURY Y&A, ZEBRA CLASSIC (Proteus + Zebra doc), baiweb (HTML drafts).",
     stack: ["Mixed"],
     notes: "Triage — promote useful modules, archive rest."
   },
@@ -530,12 +557,12 @@ const PROJECTS = [
   }
 ];
 
-const STATUS_ORDER = ["live", "wip", "sleeping"];
+const STATUS_ORDER = ["live", "wip", "sleeping", "planning"];
 const STATUS_LABEL = {
   live: "Live",
   wip: "In Forge",
   sleeping: "Sleeping",
-  planning: "Planned"
+  planning: "On Blueprint"
 };
 const STATUS_TONE = {
   live: "live",

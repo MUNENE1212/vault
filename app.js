@@ -72,7 +72,8 @@
           ? `<span class="tag">+${p.stack.length - 7}</span>` : "";
 
         const links = [];
-        if (p.url) links.push(`<a href="${esc(p.url)}" target="_blank" rel="noopener">live ↗</a>`);
+        if (p.url) links.push(`<a href="${esc(p.url)}" target="_blank" rel="noopener" class="link-live">live ↗</a>`);
+        if (p.repo) links.push(`<a href="${esc(p.repo)}" target="_blank" rel="noopener" class="link-repo" title="Source on GitHub">gh ↗</a>`);
         links.push(`<span class="where" title="${esc(p.path)}">${esc(p.path)}</span>`);
 
         html += `
