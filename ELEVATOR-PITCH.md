@@ -42,10 +42,12 @@ shipped" beats "learned about."
 
 ## 2. Working drafts for Munene Denis (EMENTECH)
 
-Built from what's actually in this vault: multiple **production** systems (not
-side projects) across fintech payments (M-Pesa Daraja, IntaSend), AI integration
-(OpenAI/Claude/Gemini with fallback chains), full-stack web (MERN, Django, Next.js),
-and even embedded/IoT (ESP32, C). Based in Nairobi, Kenya.
+**Identity baseline for all four pitches below:** early-career (0–2 yrs) full-stack
+engineer, based in Nairobi, Kenya, who runs EMENTECH — not "years of experience"
+as the headline, but *scope and realness* of what's been shipped solo. That's the
+actual differentiator at this career stage: most early-career engineers have
+tutorials and class projects; this portfolio has production traffic and real
+money moving through it.
 
 Facts pulled straight from `projects.js` — no invented metrics:
 - **DumuWaks** — live AI-matching technician marketplace, MERN + M-Pesa STK push/payouts, 99+ service types across 12 categories, zero-downtime CI/CD.
@@ -55,67 +57,93 @@ Facts pulled straight from `projects.js` — no invented metrics:
 - **ArdaLink** — satellite/NDVI-driven livestock alert system built for Red Bull Basement, voice calls herders via Azure OpenAI Realtime + Africa's Talking.
 - Several more live systems (Emen Engineering site w/ chatbot, e-commerce storefronts, a poultry-cooperative tracker) plus a deep backlog of WIP/planned work (biometric access control, multi-shop inventory).
 
-### Draft A — Founder / technical-builder pitch (networking, investors, partners)
+Four versions below — same person, same facts, different ask at the end. Swap the
+`[bracketed]` bits for the specific role/investor/client in front of you.
 
-> I'm Munene, a full-stack engineer and founder running EMENTECH out of Nairobi.
-> I build production software for businesses that Kenya's tooling usually
-> underserves — technicians who need customers to find them, shop owners who need
-> a POS that works when the internet doesn't, recipe platforms that shouldn't
-> die if one AI provider goes down.
+### Draft A — Job hunting (interviews, career fairs, recruiter calls)
+
+> I'm Munene, a full-stack engineer based in Nairobi. I'm early in my career, but
+> instead of just coursework and tutorials, I've spent the last [X months/years]
+> building and shipping production software on my own through EMENTECH — a
+> technician marketplace with AI matching and live M-Pesa payments, an
+> offline-first POS system that four different Kenyan businesses actually use for
+> tax-compliant sales, and an AI platform that automatically falls back across
+> three model providers so it never just breaks.
 >
-> Concretely: I've shipped and deployed a technician marketplace with AI matching
-> and native M-Pesa payments, an offline-first ERP that handles Kenyan tax rules
-> for four different business types, and an AI platform with automatic fallback
-> across three model providers so it never just breaks. All live, all in
-> production, all built solo end-to-end — backend, frontend, infra, and the
-> payments integration most teams outsource.
+> That means when I say I know React, Django, or Node, I don't mean "built a
+> to-do app with it" — I mean I've debugged it in production, at 2am, when a
+> payment webhook failed. I own things end-to-end: frontend, backend, deployment,
+> the integrations most junior devs never get close to.
 >
-> What makes me different is that I don't stop at "it works in the demo" — I
-> design for the failure case first: offline mode, provider fallback,
-> zero-downtime deploys. Right now I'm looking for [investors / technical
-> co-founders / clients] who want that same bias toward things that survive
-> contact with real users.
+> I'm looking for a [role, e.g. junior/mid full-stack] role where a team will let
+> me keep owning real problems, ideally somewhere working with [fintech / AI
+> products / consumer platforms] — that's where I already have the reps in.
 
-### Draft B — Job-seeker / employer-facing pitch (interviews, career fairs)
+### Draft B — Raising / investors (funding EMENTECH, finding co-founders)
 
-> I'm a full-stack software engineer with hands-on production experience across
-> the whole stack — React/Next.js and MERN on the frontend, Django and Node/Express
-> on the backend, and everything in between: payments (M-Pesa, IntaSend), AI
-> integration (OpenAI, Claude, Gemini), and deployment (Docker, Nginx, CI/CD).
+> I'm Munene, founder of EMENTECH, a Nairobi-based studio building software for
+> businesses the big platforms skip — technicians who need customers to find
+> them, shop owners who need a POS that survives a bad network day.
 >
-> Over the past [X years], I've built and shipped multiple production systems on
-> my own — from a marketplace app processing real M-Pesa transactions to an
-> offline-first POS system used by real small businesses. That means I don't just
-> know how to write code that passes a code review; I know how to build things
-> that keep running after a bad network day or a downed API.
+> In under [X] years I've shipped and deployed [N] production systems solo,
+> without a team: DumuWaks, an AI-matched technician marketplace live with real
+> M-Pesa transactions; TomTin, an offline-first ERP handling Kenyan tax rules for
+> four business types; and KEROMA, an AI platform engineered to degrade
+> gracefully instead of going down when one provider fails. Every one of these
+> is running in production today, not a pitch deck.
 >
-> I'm looking for a [role] where I can bring that end-to-end ownership to a team —
-> ideally somewhere building [fintech / AI products / infrastructure], where
-> shipping something that actually works matters as much as shipping it fast.
+> What makes EMENTECH different is that I build for the failure case first —
+> offline mode, provider fallback, zero-downtime deploys — because that's what
+> the market I'm building for actually needs. I'm looking for [seed
+> capital / a technical co-founder / early design partners] to take one of these,
+> most likely [DumuWaks / TomTin], from one builder's solo output to a team that
+> can scale it.
 
-### Draft C — 60-second / LinkedIn "About" version
+### Draft C — Client / freelance (businesses hiring EMENTECH to build something)
 
-> Full-stack engineer and founder (EMENTECH, Nairobi) building production
-> software for underserved markets — AI-matched marketplaces, offline-first ERPs,
-> and payment-integrated platforms that keep working when the network doesn't.
-> I design for the failure case first, not last, and I've shipped it solo:
-> backend, frontend, infra, payments. Currently exploring [goal — funding /
-> collaborators / a full-time role] with people who care as much about resilience
-> as they do about velocity.
+> I'm Munene, I run EMENTECH — I design and build production software for small
+> and mid-size businesses, end-to-end: the app, the payments, the deployment, and
+> what happens after launch.
+>
+> I'm not pitching you a portfolio of demos. TomTin is a POS system real business
+> owners use daily for water, laundry, retail, and LPG sales, and it still works
+> offline and reconciles VAT and income tax automatically. DumuWaks is a live
+> marketplace processing real M-Pesa payments end-to-end, from STK push to
+> payout. If your business needs software that has to actually work when the
+> internet drops or a payment provider hiccups, that's exactly the kind of
+> problem I build for by default, not as an afterthought.
+>
+> If you've got a process that's still running on spreadsheets or WhatsApp, or an
+> existing system that breaks under real usage, I'd like to talk about [what
+> you're building] and what it'd take to get it live.
+
+### Draft D — General networking / LinkedIn "About" (no fixed ask yet)
+
+> Full-stack engineer based in Nairobi, early in my career but with a portfolio
+> that doesn't read that way — through EMENTECH, I've independently designed and
+> shipped multiple production systems: an AI-matched marketplace with live M-Pesa
+> payments, an offline-first ERP used by real small businesses, and an AI
+> platform built to keep working even when a model provider goes down. I care
+> about software that survives contact with real users, not just demos — offline
+> mode, fallback paths, zero-downtime deploys, by default. Open to full-time
+> roles, collaborators, and interesting problems in fintech, AI products, or
+> infrastructure — always happy to talk shop.
 
 ---
 
 ## Open questions (needed to finalize)
 
-These drafts are a first pass built entirely from what's verifiable in the repo.
-To sharpen them, I need from you:
+These are the last honest gaps — facts only you can supply:
 
-1. **Primary audience/goal right now** — job hunting, raising for EMENTECH,
-   finding clients, or something else? (Changes which draft is "the" pitch.)
-2. **Years of experience** and how you'd describe your current title (founder?
-   freelance engineer? both?).
-3. **One number you're comfortable citing** — users, transactions, revenue,
-   uptime, anything real — even an estimate. The drafts above deliberately avoid
-   inventing metrics like "50% engagement boost" that aren't in the project data.
-4. Any specific role/company/investor type you're pitching next, so I can tailor
-   the ask in the last line.
+1. **Timeframe** — how long has EMENTECH/this body of work actually taken
+   (`[X months/years]` appears in Drafts A and B)? Get this right; it's the
+   first thing a sharp listener will sanity-check.
+2. **One real number you're comfortable citing** — users, transactions,
+   revenue, uptime, business count for TomTin, anything verifiable. All four
+   drafts deliberately avoid inventing stats that aren't in the project data.
+3. **For Draft A** — the specific role/company type you're currently applying to,
+   so the ask lands as targeted rather than generic.
+4. **For Draft B** — actual raise stage/amount (or "not raising money yet, just
+   looking for a co-founder") and which project is the flagship you'd lead with.
+5. **For Draft C** — do you have a rate/engagement model (fixed-price builds,
+   retainer, etc.) to fold into the ask, or is that a separate conversation?
