@@ -571,6 +571,17 @@ const PROJECTS = [
     desc: "Docs only. References the canonical ardalink-engine + ardalink-ai repos.",
     stack: ["Docs"],
     notes: "Superseded by ardalink-engine. Keep as archive."
+  },
+  {
+    name: "Telco Churn Predictor",
+    path: "CHURN_repo",
+    status: "sleeping",
+    tier: 24,
+    tagline: "Group ML project — will-they-churn classifier.",
+    desc: "Streamlit app serving a scikit-learn Logistic Regression pipeline trained on Telco customer data. Form-driven single-customer prediction with churn probability, seaborn stay/churn bar chart, and a rule-based risk-factor breakdown (contract type, tenure, payment method).",
+    stack: ["Python", "Streamlit", "scikit-learn", "pandas", "matplotlib", "seaborn"],
+    repo: "https://github.com/MUNENE1212/CHURN_repo",
+    notes: "Supervised learning coursework/group project. Not deployed — run locally with best_model.pkl alongside churnapp.py."
   }
 ];
 
