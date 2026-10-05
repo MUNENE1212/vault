@@ -28,10 +28,11 @@ const PROJECTS = [
     desc: "Mobile-first, offline-first PWA. Owner / Accountant / Operator roles. IndexedDB via Dexie.js, Django 5 + DRF + Postgres, Chart.js analytics, VAT 16% + Kenya income tax, audit trail.",
     stack: ["React 18", "Vite", "Django 5", "DRF", "PostgreSQL 15", "Dexie.js", "Chart.js", "CSS Modules"],
     url: "https://tomtin.ementech.co.ke",
+    repo: "https://github.com/MUNENE1212/tomtin",
     notes: "Live. Frontend complete; backend modules still landing endpoints."
   },
   {
-    name: "Baitech Storefront",
+    name: "Emen Shop Storefront (formerly Baitech)",
     path: "newbaitech",
     status: "live",
     tier: 3,
@@ -39,7 +40,8 @@ const PROJECTS = [
     desc: "Next.js 16 + TS storefront with native MongoDB driver, Cloudinary media, custom JWT auth, and a WhatsApp checkout flow.",
     stack: ["Next.js 16", "TypeScript", "MongoDB", "Cloudinary", "JWT", "WhatsApp"],
     url: "https://baitech.co.ke",
-    notes: "v2.0.0. Pair with baitech-dashboard for pricing engine."
+    repo: "https://github.com/MUNENE1212/Baitech_website",
+    notes: "v2.0.0. Pairs with baitech-dashboard (pricing engine). Older Next.js rewrite baitech26 is archived."
   },
   {
     name: "Emen Engineering (ementech.co.ke)",
@@ -50,7 +52,7 @@ const PROJECTS = [
     desc: "React 19 + Vite + TS SPA, Express + Socket.IO API, MongoDB Atlas, Postfix/Dovecot mail, OpenAI-powered chatbot.",
     stack: ["React 19", "Vite", "Express", "Socket.IO", "MongoDB Atlas", "Postfix", "OpenAI"],
     url: "https://ementech.co.ke",
-    repo: "https://github.com/MUNENE1212/ementech-website",
+    repo: "https://github.com/MUNENE1212/ementech",
     notes: "Production. Security audit + remediation complete."
   },
   {
@@ -58,23 +60,23 @@ const PROJECTS = [
     path: "baitech-infra",
     status: "live",
     tier: 5,
-    tagline: "VPS deployment configs for 69.164.244.165.",
+    tagline: "Deployment configuration for the Emen VPS.",
     desc: "Evolution API WhatsApp CRM, OpenClaw AI PA, Typebot, InfluxDB + Grafana. Docker Compose + Nginx + systemd.",
     stack: ["Docker Compose", "Nginx", "InfluxDB", "Grafana", "ZhiPu", "OpenAI"],
     repo: "https://github.com/MUNENE1212/baitech-infra",
-    notes: "Production. Watch the CREDENTIALS.md — rotate regularly."
+    notes: "Production. Keep credentials out of the repo; store in the password manager and rotate regularly."
   },
   {
-    name: "PLP Portfolio (cyberpunk)",
+    name: "Personal portfolio (munene1212.github.io)",
     path: "PLP/PLP_portfolio",
     status: "live",
     tier: 6,
-    tagline: "Earlier cyberpunk personal site.",
-    desc: "Static HTML portfolio + Dockerfile, deployed at munene1212.github.io. The spiritual predecessor to this index.",
-    stack: ["HTML", "CSS", "Docker"],
+    tagline: "Client-facing portfolio for Munene / Emen.",
+    desc: "Static, data-driven site: services, case studies, project index, contact. Public catalogue in assets/data/projects.js — curated from this vault, never copied wholesale.",
+    stack: ["HTML", "CSS", "JavaScript"],
     url: "https://munene1212.github.io",
     repo: "https://github.com/MUNENE1212/MUNENE1212.github.io",
-    notes: "Superseded by this vault but still served."
+    notes: "Rebuilt Oct 2026 (replaced the cyberpunk site). When a project goes live, add it there too."
   },
   {
     name: "Image Generator",
@@ -87,6 +89,18 @@ const PROJECTS = [
     url: "https://image-generator.ementech.co.ke",
     repo: "https://github.com/MUNENE1212/image-generator",
     notes: "Live. Research-grade comparison surface."
+  },
+
+  {
+    name: "Lectern",
+    path: "lectern",
+    status: "live",
+    tier: 8,
+    tagline: "PDF / ebook / article → chaptered audiobook, offline.",
+    desc: "Ligature repair, verifiable chapter detection, Piper TTS and a local web library. Public, open source.",
+    stack: ["Python", "Piper TTS", "PyMuPDF"],
+    repo: "https://github.com/MUNENE1212/lectern",
+    notes: "Featured on the portfolio."
   },
 
   /* ============================================================
@@ -112,7 +126,7 @@ const PROJECTS = [
     desc: "Python 3.12 + FastAPI. geopandas + networkx for journey planning, Google Earth Engine, Postgres. 8-doc docs/ tree.",
     stack: ["Python 3.12", "FastAPI", "geopandas", "networkx", "Earth Engine", "Postgres"],
     repo: "https://github.com/MUNENE1212/ardalink-engine",
-    notes: "Active MVP build for Red Bull Basement."
+    notes: "Active MVP build for Red Bull Basement. Org copy: JHUB-AFRICA/arda-link-ai; collaborator repo: Diznizo25/arda-piosphere."
   },
   {
     name: "ArdaLink AI",
@@ -123,7 +137,7 @@ const PROJECTS = [
     desc: "Node 24 + TS + Express 5 monorepo. Azure OpenAI Realtime, Africa's Talking, Cosmos DB, pnpm workspaces.",
     stack: ["Node 24", "TypeScript", "Express 5", "Azure OpenAI Realtime", "Africa's Talking", "Cosmos DB", "pnpm"],
     repo: "https://github.com/MUNENE1212/ardalink-ai",
-    notes: "Sister repos: ardalink-api, ardalink-web."
+    notes: "Private fork. Sister repos: ardalink-api, ardalink-web."
   },
   {
     name: "ArdaLink API",
@@ -178,7 +192,7 @@ const PROJECTS = [
     desc: "Next.js 16 + SQLite + Prisma, Tailwind v4, shadcn/ui, Recharts, NextAuth. Handles WHT, ToT, VAT for Kilimall / Jumia / Own-site channels.",
     stack: ["Next.js 16", "SQLite", "Prisma", "Tailwind v4", "shadcn/ui", "Recharts", "NextAuth"],
     repo: "https://github.com/MUNENE1212/baitech-dashboard",
-    notes: "Login: admin@baitech.co.ke / baitech2026."
+    notes: "Admin login lives in the password manager. The previous password was exposed in this repo while it was public — rotate it."
   },
   {
     name: "Kuku Egg Tracker",
@@ -245,7 +259,7 @@ const PROJECTS = [
     tagline: "Agentic AI experiments w/ Gradio UI + tool calls.",
     desc: "Python + Gradio + Google APIs. Tool-call orchestration playground.",
     stack: ["Python", "Gradio", "Google APIs"],
-    notes: "WARNING: credentials.json + token.pickle checked in. Rotate immediately."
+    notes: "ACTION: Google credentials were committed locally. Revoke and reissue them; keep them out of git."
   },
   {
     name: "Multi-Business Project",
@@ -282,24 +296,24 @@ const PROJECTS = [
   {
     name: "Baitech LED Branding",
     path: "ADVERTISEMENT/baitech-led-branding",
-    status: "wip",
+    status: "sleeping",
     tier: 16,
     tagline: "64×16 LED matrix shop display.",
     desc: "ESP32 + FastLED C++ firmware. Wokwi simulation. Python + pygame simulator. 6 animation patterns for 11 services.",
     stack: ["ESP32", "FastLED", "C++", "Wokwi", "Pygame"],
     repo: "https://github.com/MUNENE1212/baitech-led-branding",
-    notes: "Logo: assets/baitech_logo.png."
+    notes: "Superseded by emen-signage. Kept for typography, legibility and services research."
   },
   {
     name: "RGB Branding",
     path: "ADVERTISEMENT/rgb-branding",
-    status: "wip",
+    status: "sleeping",
     tier: 17,
     tagline: "Companion RGB LED branding project.",
     desc: "Firmware + simulator. PROJECT_STATUS.md tracks current state.",
     stack: ["ESP32", "Firmware", "Simulator"],
     repo: "https://github.com/MUNENE1212/rgb-branding",
-    notes: "Companion to baitech-led-branding."
+    notes: "Superseded by emen-signage. Kept for the technology comparison and power research."
   },
   {
     name: "Email Daemon",
@@ -310,6 +324,95 @@ const PROJECTS = [
     desc: "Node emailMonitor.js. Operational script for inbox automation.",
     stack: ["Node.js"],
     notes: "No git repo. Quick utility."
+  },
+
+  {
+    name: "Emen Signage",
+    path: "emen-signage",
+    status: "wip",
+    tier: 0.5,
+    tagline: "One ESP32 firmware for every LED sign installation.",
+    desc: "Panel, geometry, content and duty class are configuration. 14 animations, MQTT content, OTA with rollback, host-run tests. Builds on EmenSense.",
+    stack: ["C++", "ESP32", "PlatformIO", "MQTT", "OTA"],
+    repo: "https://github.com/MUNENE1212/emen-signage",
+    notes: "Emen Lighting flagship. Supersedes baitech-led-branding and rgb-branding."
+  },
+  {
+    name: "EmenSense",
+    path: "emensense",
+    status: "wip",
+    tier: 0.6,
+    tagline: "Modular sensing + control platform (HAL, native tests, CI).",
+    desc: "The foundation Emen firmware builds on — the reusable embedded module.",
+    stack: ["C++", "ESP32", "PlatformIO", "CI"],
+    repo: "https://github.com/MUNENE1212/emensense",
+    notes: "70 open issues — triage into milestones."
+  },
+  {
+    name: "The Ambitious",
+    path: "the-ambitious",
+    status: "wip",
+    tier: 8.5,
+    tagline: "Self-help group PWA: contributions, funds, investments, governance.",
+    desc: "Mobile-first. Next.js 16, TypeScript, Firebase, Tailwind v4. Shares a pattern with Kuku Egg Tracker — candidate for a shared 'group finance' module.",
+    stack: ["Next.js 16", "TypeScript", "Firebase", "Tailwind v4"],
+    repo: "https://github.com/MUNENE1212/the-ambitious",
+    notes: "Public repo."
+  },
+  {
+    name: "Muthwani Ward",
+    path: "muthwani-ward",
+    status: "wip",
+    tier: 8.7,
+    tagline: "Ward-level project (TypeScript).",
+    desc: "No description on GitHub yet.",
+    stack: ["TypeScript"],
+    repo: "https://github.com/MUNENE1212/muthwani-ward",
+    notes: "ACTION: add a repo description and README."
+  },
+  {
+    name: "Emen company site (ementech.co.ke)",
+    path: "ementech",
+    status: "wip",
+    tier: 8.8,
+    tagline: "Next iteration of the company website.",
+    desc: "Modern SaaS & AI company website. Active as of Oct 2026.",
+    stack: ["JavaScript"],
+    repo: "https://github.com/MUNENE1212/ementech",
+    notes: "40 open issues."
+  },
+  {
+    name: "ESP32 Labs (LED · I2C · SPI · Serial)",
+    path: "LED, I2C, SPI, serial-comms",
+    status: "wip",
+    tier: 16.5,
+    tagline: "Progressive ESP32 learning benches, Wokwi-simulated.",
+    desc: "GPIO/PWM to digital watch (LED), OLED + bus diagnostics (I2C), ten SPI projects to a home-security capstone (SPI), UART protocols (serial-comms). Public.",
+    stack: ["C++", "ESP32", "PlatformIO", "Wokwi"],
+    repo: "https://github.com/MUNENE1212/LED",
+    notes: "Candidate to consolidate into one esp32-labs monorepo."
+  },
+  {
+    name: "AuthentiK",
+    path: "AuthentiK",
+    status: "wip",
+    tier: 19,
+    tagline: "Product provenance + verification (academic).",
+    desc: "Hash-chained lifecycle events, Merkle anchoring, anomaly detection. FastAPI + Postgres + React.",
+    stack: ["Python", "FastAPI", "PostgreSQL", "React"],
+    repo: "https://github.com/MUNENE1212/AuthentiK",
+    notes: "Academic final-year project — keep private and off the public portfolio."
+  },
+  {
+    name: "Mama Guardian",
+    path: "mama-guardian",
+    status: "wip",
+    tier: 20,
+    tagline: "AI/ML to predict and prevent maternal deaths in Kenya.",
+    desc: "Docker, FastAPI, React. Successor to maternal-risk-api (Apr 2025).",
+    stack: ["FastAPI", "React", "Docker", "ML"],
+    repo: "https://github.com/MUNENE1212/mama-guardian",
+    notes: "Dormant since Mar 2026. Strong impact story if revived."
   },
 
   /* ============================================================
@@ -324,7 +427,7 @@ const PROJECTS = [
     desc: "FastAPI + Postgres 16 + pgcrypto, Qdrant, Jetson Orin edge, InsightFace. Duress-PIN, anti-passback. 23 ADRs, full mvp/plan/architecture/bom/security/legal docs.",
     stack: ["FastAPI", "Postgres 16", "pgcrypto", "Qdrant", "InsightFace", "Jetson Orin"],
     repo: "https://github.com/MUNENE1212/biometric-access-control",
-    notes: "2026-09-30 deadline. Zero code yet — docs only."
+    notes: "2026-09-30 deadline has passed — confirm status. 29 open issues as of Oct 2026."
   },
   {
     name: "Pejan Inventory (multi-shop)",
@@ -352,14 +455,15 @@ const PROJECTS = [
     notes: "Empty. Awaiting thesis."
   },
   {
-    name: "SmartBiz POS",
+    name: "SmartBiz",
     path: "PROJ25/smartbiz",
-    status: "sleeping",
-    tier: 2,
-    tagline: "POS / business manager v1 + v2.",
-    desc: "Python + Mongo. Notes interleaved as Pasted image*.png — original design sketches.",
-    stack: ["Python", "MongoDB"],
-    notes: "Superseded by TomTin ERP. Archive-grade."
+    status: "wip",
+    tier: 9,
+    tagline: "SME suite: inventory, sales, suppliers, payroll, reporting, M-Pesa.",
+    desc: "Emen Tech product for Kenyan SMEs. FastAPI + MongoDB. Revived Sep 2026.",
+    stack: ["Python", "FastAPI", "MongoDB", "M-Pesa"],
+    repo: "https://github.com/MUNENE1212/Smartbiz",
+    notes: "Overlaps TomTin ERP and online-shop (archived) — decide which is the canonical SME product."
   },
   {
     name: "Liquor Store",
@@ -367,9 +471,10 @@ const PROJECTS = [
     status: "sleeping",
     tier: 3,
     tagline: "Liquor store mgmt system.",
-    desc: "Python. Has sec.txt, new_modules, rejects folders. May contain useful modules.",
-    stack: ["Python"],
-    notes: "WARNING: sec.txt — review before sharing."
+    desc: "LiquorLink: inventory, sales, expenses and analytics for liquor stores. Has new_modules and rejects folders — may contain reusable modules.",
+    stack: ["Python", "JavaScript"],
+    repo: "https://github.com/MUNENE1212/Liquor_",
+    notes: "ACTION: review sec.txt for secrets before the repo is ever shared."
   },
   {
     name: "Baitech Catalogue",
@@ -386,9 +491,10 @@ const PROJECTS = [
     path: "PROJ25/zach_academix",
     status: "sleeping",
     tier: 5,
-    tagline: "Static academic writing services site.",
-    desc: "HTML static site for academic writing services.",
-    stack: ["HTML"],
+    tagline: "Academic writing services site.",
+    desc: "MongoDB-backed platform (academix-writers).",
+    stack: ["HTML", "MongoDB"],
+    repo: "https://github.com/MUNENE1212/academix-writers",
     notes: "Niche project. Archive."
   },
   {
@@ -396,19 +502,21 @@ const PROJECTS = [
     path: "PROJ25/DEKILA",
     status: "sleeping",
     tier: 6,
-    tagline: "Brand folder.",
-    desc: "logo.jpg present. Brand assets in waiting.",
-    stack: ["Brand"],
-    notes: "Brand-only. No product code."
+    tagline: "Client website.",
+    desc: "Modern website for a client. Default branch is still a claude/ setup branch.",
+    stack: ["TypeScript"],
+    repo: "https://github.com/MUNENE1212/DEKILA",
+    notes: "ACTION: set default branch to main."
   },
   {
     name: "Prudcr",
     path: "PROJ25/prudcr",
     status: "sleeping",
     tier: 7,
-    tagline: "YouTube downloader + audio filter experiments.",
-    desc: "Pydub-based audio processing. downloadyt.py + speech processing pipeline. output_audio_filtered.wav present.",
-    stack: ["Python", "Pydub", "YouTube"],
+    tagline: "AI video editor for short-form creators.",
+    desc: "Started as Pydub audio experiments; repo prudcr-video-editor holds the AI video-editor direction.",
+    stack: ["Python", "Pydub"],
+    repo: "https://github.com/MUNENE1212/prudcr-video-editor",
     notes: "Experiments folder. Salvage the audio pipeline."
   },
   {
@@ -487,8 +595,9 @@ const PROJECTS = [
     status: "sleeping",
     tier: 15,
     tagline: "Data Science / ML notebooks.",
-    desc: "Churn, Fraudster, ASL, RAG pipeline notebooks. JupyterLab caches.",
+    desc: "Churn, Fraudster, ASL, RAG pipeline notebooks. Churn group project is in CHURN_repo; data-science repo holds misc work.",
     stack: ["Jupyter", "Python", "ML"],
+    repo: "https://github.com/MUNENE1212/CHURN_repo",
     notes: "Pick best notebooks for portfolio highlights."
   },
   {
@@ -571,6 +680,27 @@ const PROJECTS = [
     desc: "Docs only. References the canonical ardalink-engine + ardalink-ai repos.",
     stack: ["Docs"],
     notes: "Superseded by ardalink-engine. Keep as archive."
+  },
+  {
+    name: "Archived rewrites",
+    path: "baitech26, online-shop, pos",
+    status: "sleeping",
+    tier: 24,
+    tagline: "Superseded attempts kept for reference.",
+    desc: "baitech26 (Next.js storefront, archived), online-shop (multi-tenant ERP, archived, public), pos (2024 POS, Python).",
+    stack: ["Archive"],
+    repo: "https://github.com/MUNENE1212/online-shop",
+    notes: "pos is not archived yet — archive it."
+  },
+  {
+    name: "Coursework & bootcamp (PLP, MERN)",
+    path: "PLP_Python, Frameworks_Assignment, Task_Management_sql_wk8, GROUP0_PLP, Ubuntu_Requests, plp-final-web-project, react-frontend-dev, css3-animations, mern-final, mern-testing, devops-essentials, princess-final-project + PLP-WebTechnologies forks",
+    status: "sleeping",
+    tier: 25,
+    tagline: "Training work — evidence of learning, not products.",
+    desc: "Private repos plus six public PLP-WebTechnologies classroom repos.",
+    stack: ["Coursework"],
+    notes: "ACTION: archive all; consider moving them into one 'learning' repo."
   }
 ];
 

@@ -3,9 +3,9 @@
 
 name: Deploy static site to GitHub Pages
 
+# The vault is a private, internal index. It is no longer published on every
+# push; run this manually only if you deliberately want a (private) Pages copy.
 on:
-  push:
-    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
