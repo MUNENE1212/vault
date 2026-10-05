@@ -1,6 +1,6 @@
-# EMENTECH // Vault of Giants
+# Emen // Vault of Giants
 
-A personal, private-friendly index of every project under the **EMENTECH** umbrella — production systems, works-in-progress, and the sleeping giants waiting to be woken.
+A private, internal index of every project under the **EMENTECH** umbrella — production systems, works-in-progress, and the sleeping giants waiting to be woken.
 
 > **Engineering the future, one giant at a time.**
 
@@ -28,14 +28,23 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Deploy to GitHub Pages
+## Visibility — private by design
 
-1. Push this folder to a GitHub repo (e.g. `ementech-vault`).
-2. **Settings → Pages → Build & deployment → Source: `Deploy from a branch`.**
-3. Branch: `main`, folder: `/ (root)`.
-4. GitHub will publish at `https://<user>.github.io/ementech-vault/`.
+The vault is the **internal** index: honest statuses, action items and dormant work.
+Keep this repository **private**. The public, client-facing view is the portfolio at
+<https://munene1212.github.io>, whose catalogue (`assets/data/projects.js` in
+`MUNENE1212.github.io`) is curated from this file by hand.
 
-That's it — no bundler, no CI, no Node runtime needed.
+Even though the repo is private, never write secrets here — no passwords, API keys,
+tokens or server IPs. Reference "the password manager" instead.
+
+The Pages workflow is manual-only (`workflow_dispatch`); it no longer publishes on push.
+
+## Keeping it current
+
+- New repo or status change → update `projects.js` here first.
+- Project goes live or becomes client-worthy → add a curated entry to the portfolio.
+- Repo hygiene tasks (descriptions, topics, archiving) → `HOUSEKEEPING.md`.
 
 ## Re-ordering & editing
 
@@ -60,7 +69,7 @@ Then re-commit and refresh — no build step.
 ## File layout
 
 ```
-portfolio/
+vault/
 ├── index.html        # markup + hero + filters
 ├── styles.css        # dark theme, EMENTECH tokens (mahogany, charcoal, circuit-blue)
 ├── app.js            # render + filter + search logic
@@ -92,4 +101,4 @@ Status colors:
 
 ## License
 
-Private index. Do not redistribute.
+MIT for the code (see `LICENSE`). The catalogue content is internal — do not redistribute.
