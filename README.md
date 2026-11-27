@@ -38,7 +38,7 @@ Keep this repository **private**. The public, client-facing view is the portfoli
 Even though the repo is private, never write secrets here — no passwords, API keys,
 tokens or server IPs. Reference "the password manager" instead.
 
-The Pages workflow is manual-only (`workflow_dispatch`); it no longer publishes on push.
+GitHub Pages publishes only `pages-stub/` (a redirect to the portfolio). The catalogue itself is never deployed.
 
 ## Keeping it current
 
