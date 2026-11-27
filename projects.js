@@ -15,9 +15,9 @@ const PROJECTS = [
     tagline: "AI-powered technician marketplace.",
     desc: "Full-stack MERN platform connecting skilled technicians with customers across Kenya. AI matching, real-time messaging, M-Pesa STK push and B2C payouts, 99+ service types in 12 categories, escrow booking-fee system.",
     stack: ["MERN", "M-Pesa Daraja", "Socket.IO", "JWT", "MongoDB 7", "React 18", "TypeScript", "Vite", "Tailwind", "PM2", "Nginx", "GitHub Actions"],
-    url: "https://dumuwaks.ementech.co.ke",
+    url: "https://dumuwaks.co.ke",
     repo: "https://github.com/MUNENE1212/dumuwaks",
-    notes: "Production. Zero-downtime CI/CD on master."
+    notes: "FLAGSHIP — the product to fund. Moved to dumuwaks.co.ke. Traction KPIs: Admin → Traction and public /api/v1/public/traction (dumuwaks PR #44). Test bookings wiped 2026-09-26; escrow needs live IntaSend keys (PAYMENTS_ENABLED)."
   },
   {
     name: "TomTin ERP",
@@ -29,7 +29,7 @@ const PROJECTS = [
     stack: ["React 18", "Vite", "Django 5", "DRF", "PostgreSQL 15", "Dexie.js", "Chart.js", "CSS Modules"],
     url: "https://tomtin.ementech.co.ke",
     repo: "https://github.com/MUNENE1212/tomtin",
-    notes: "Live. Frontend complete; backend modules still landing endpoints."
+    notes: "OFFLINE 2026-11-27: tomtin.ementech.co.ke does not resolve in DNS — restore or retire. Live. Frontend complete; backend modules still landing endpoints."
   },
   {
     name: "Emen Shop Storefront (formerly Baitech)",
@@ -41,7 +41,7 @@ const PROJECTS = [
     stack: ["Next.js 16", "TypeScript", "MongoDB", "Cloudinary", "JWT", "WhatsApp"],
     url: "https://baitech.co.ke",
     repo: "https://github.com/MUNENE1212/Baitech_website",
-    notes: "v2.0.0. Pairs with baitech-dashboard (pricing engine). Older Next.js rewrite baitech26 is archived."
+    notes: "OFFLINE 2026-11-27: baitech.co.ke does not resolve in DNS — restore or retire. v2.0.0. Pairs with baitech-dashboard (pricing engine). Older Next.js rewrite baitech26 is archived."
   },
   {
     name: "Emen Engineering (ementech.co.ke)",
@@ -88,7 +88,7 @@ const PROJECTS = [
     stack: ["Python 3.12", "Streamlit", "Pydantic v2", "DuckDB", "Replicate", "Fal.ai"],
     url: "https://image-generator.ementech.co.ke",
     repo: "https://github.com/MUNENE1212/image-generator",
-    notes: "Live. Research-grade comparison surface."
+    notes: "OFFLINE 2026-11-27: image-generator.ementech.co.ke does not resolve in DNS — restore or retire. Live. Research-grade comparison surface."
   },
 
   {
@@ -216,7 +216,7 @@ const PROJECTS = [
     stack: ["Next.js 15", "TypeScript", "Tailwind v3", "Fraunces", "Inter", "Vercel AI SDK", "Mongoose", "NextAuth v5", "IntaSend"],
     url: "https://keroma.ementech.co.ke",
     repo: "https://github.com/MUNENE1212/keroma",
-    notes: "Brand rebuild of KE-ROMA-AI. Works out of the box (mock AI). Live AI + payments feature-flagged until keys supplied."
+    notes: "OFFLINE 2026-11-27: keroma.ementech.co.ke does not resolve in DNS — restore or retire. Brand rebuild of KE-ROMA-AI. Works out of the box (mock AI). Live AI + payments feature-flagged until keys supplied."
   },
   {
     name: "Jaseci Refill System",
