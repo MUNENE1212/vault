@@ -1,11 +1,13 @@
-# Static-site deploy to GitHub Pages (for ementech-portfolio/portfolio etc.)
-# No build step — publishes index.html + assets/ as-is.
+# GitHub Pages for the vault: publishes ONLY a redirect stub, never the catalogue.
 
 name: Deploy static site to GitHub Pages
 
-# The vault is a private, internal index. It is no longer published on every
-# push; run this manually only if you deliberately want a (private) Pages copy.
+# The vault is a private, internal index and must never be published.
+# Pages serves only a redirect stub (pages-stub/) to the public
+# portfolio, replacing an older deployment that exposed internal notes.
 on:
+  push:
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -33,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'pages-stub'
 
       - name: Deploy to GitHub Pages
         id: deployment
